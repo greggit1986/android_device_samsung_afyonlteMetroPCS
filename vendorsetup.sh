@@ -1,0 +1,2 @@
+add_lunch_combo lineage_afyonlteMetroPCS-eng
+add_lunch_combo lineage_afyonlteMetroPCS-userdebug
