@@ -24,15 +24,14 @@ TARGET_LD_SHIM_LIBS += \
 #        /system/vendor/lib/hw/sensors.vendor.msm8226.so|libshim_accelerator.so
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_afyonlteMetroPCS_defconfig
-#TARGET_KERNEL_CONFIG := lineage_afyonlteMetroPCS-recovery_defconfig
+#TARGET_KERNEL_CONFIG := lineage_afyonltetmo_defconfig
+TARGET_KERNEL_CONFIG := lineage_afyonlteMetroPCS2_defconfig
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := afyonltetmo,afyonltecan,afyonltemtr,SM-G386T,SM-G386T1,SM-G386W,G386T,G386T1,afyonlteMetroPCS,mtr
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_afyonlte
-
-# Init-jj
-#DEVICE_PATH := device/samsung/afyonlteMetroPCS
-#TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_afyonlte
 
 # NFC
 # include $(COMMON_PATH)/nfc/pn547/board.mk
@@ -41,4 +40,4 @@ TARGET_INIT_VENDOR_LIB := libinit_afyonlte
 include $(COMMON_PATH)/radio/single/board.mk
 
 # inherit from the proprietary version
--include vendor/samsung/afyonlteMetroPCS/BoardConfigVendor.mk
+-include vendor/samsung/afyonltetmo/BoardConfigVendor.mk

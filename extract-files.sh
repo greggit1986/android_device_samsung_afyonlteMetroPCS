@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=afyonlteMetroPCS
+export DEVICE=afyonltetmo
 export DEVICE_COMMON=afyonlte-common
 export VENDOR=samsung
 
