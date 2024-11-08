@@ -55,18 +55,18 @@ void vendor_load_properties()
         property_override_dual("ro.product.device", "ro.product.vendor.device", "afyonltecan");
         gsm_properties("3", "0");
     } else if (bootloader.find("G386T") == 0) {
-        /* afyonltetmo */
+        /* afyonltetmo and afyonlteMetroPCS */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/afyonltetmo/afyonltetmo:4.4.2/KOT49H/G386TUVU1ANK3:user/release-keys");
         property_override("ro.build.description", "afyonltetmo-user 4.4.2 KOT49H G386TUVU1ANK3 release-keys");
         property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G386T");
         property_override_dual("ro.product.device", "ro.product.vendor.device", "afyonltetmo");
         gsm_properties("3", "0");
     } else if (bootloader.find("G386T1") == 0) {
-        /* afyonlteMetroPCS */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/afyonlteMetroPCS/afyonlteMetroPCS:4.4.2/KOT49H/G386T1UVS1AQA1:user/release-keys");
-        property_override("ro.build.description", "afyonlteMetroPCS-user 4.4.2 KOT49H G386T1UVS1AQA1 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G386T1");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "afyonlteMetroPCS");
+        /* afyonlteMetroPCS - Should not be needed but just in case ... * */
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/afyonltetmo/afyonltetmo:4.4.2/KOT49H/G386TUVU1ANK3:user/release-keys");
+        property_override("ro.build.description", "afyonltetmo-user 4.4.2 KOT49H G386TUVU1ANK3 release-keys");
+        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G386T");
+        property_override_dual("ro.product.device", "ro.product.vendor.device", "afyonltetmo");
         gsm_properties("3", "0");
     } else {
         gsm_properties("3", "0");
