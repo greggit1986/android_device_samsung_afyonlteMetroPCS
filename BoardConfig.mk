@@ -24,8 +24,8 @@ TARGET_LD_SHIM_LIBS += \
 #        /system/vendor/lib/hw/sensors.vendor.msm8226.so|libshim_accelerator.so
 
 # Kernel
-#TARGET_KERNEL_CONFIG := lineage_afyonltetmo_defconfig
-TARGET_KERNEL_CONFIG := lineage_afyonlteMetroPCS2_defconfig
+#TARGET_KERNEL_CONFIG := lineage_afyonlteMetroPCS2_defconfig
+TARGET_KERNEL_CONFIG := lineage_afyonltecan_defconfig
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := afyonltetmo,afyonltecan,afyonltemtr,SM-G386T,SM-G386T1,SM-G386W,G386T,G386T1,afyonlteMetroPCS,mtr
